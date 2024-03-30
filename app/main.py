@@ -1,7 +1,6 @@
-from pipeline import extract, transform, load
+from pipeline import extract, load, transform
 
-
-if __name__ == "__main__":
+if __name__ == '__main__':
 
     input_path = './data/input'
 

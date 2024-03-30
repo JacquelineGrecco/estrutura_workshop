@@ -11,8 +11,26 @@ python = "3.11.3"
 pandas = "^2.2.1"
 openpyxl = "^3.1.2"
 pytest = "^8.1.1"
+isort = "^5.13.2"
+pydocstyle = "^6.3.0"
+pip-audit = "^2.7.2"
+blue = "^0.9.1"
+taskipy = "^1.12.2"
 
 
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3
+
+
+[tool.taskipy.tasks]
+lint = "blue --check . && isort --check-only ."
+format = "isort . && blue ."
+test = "poetry run pytest -v"
+doc = "pydocstyle ."
+run = "python3 app/main.py"
