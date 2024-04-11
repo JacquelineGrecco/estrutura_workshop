@@ -1,0 +1,21 @@
+site_name: Projeto ETL
+theme:
+  name: material
+  palette:
+    primary: blue
+    accent: light-blue
+  language: pt-br
+
+repo_name: JacquelineGrecco/estrutura_workshop
+repo_url: https://github.com/JacquelineGrecco/estrutura_workshop
+
+markdown_extensions:
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+
+plugins:
+  - search
+  - mkdocstrings:
+      default_handler: python
