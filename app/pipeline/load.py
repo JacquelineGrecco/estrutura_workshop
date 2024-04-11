@@ -17,7 +17,5 @@ def load_dataframe(
 
     if not os.path.exists(output_path):
         os.makedirs(output_path)
-    dataframe.to_excel(
-        os.path.join(output_path, file_name_output), index=False
-    )
-    print(f'Dataframe salvo com sucesso em {output_path}/{file_name_output}')
+    dataframe.to_excel(os.path.join(output_path, file_name_output), index=False)
+    print(f"Dataframe salvo com sucesso em {output_path}/{file_name_output}")

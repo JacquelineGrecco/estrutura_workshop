@@ -15,7 +15,7 @@ def extract_from_excel(input_path: str) -> List[pd.DataFrame]:
         list:lista de dataframe com os dados
     """
 
-    all_files = glob.glob(os.path.join(input_path, '*.xlsx'))
+    all_files = glob.glob(os.path.join(input_path, "*.xlsx"))
 
     dataframe_list = []
 
@@ -25,6 +25,6 @@ def extract_from_excel(input_path: str) -> List[pd.DataFrame]:
     return dataframe_list
 
 
-if __name__ == '__main__':
-    input_path = './data/input'
+if __name__ == "__main__":
+    input_path = "./data/input"
     print(extract_from_excel(input_path))

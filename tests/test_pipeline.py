@@ -2,8 +2,8 @@ import pandas as pd
 
 from app.pipeline.transform import transform_dataframe
 
-df = pd.DataFrame({'col1': [1, 2], 'col2': [3, 4]})
-df2 = pd.DataFrame({'col1': [5, 6], 'col2': [7, 8]})
+df = pd.DataFrame({"col1": [1, 2], "col2": [3, 4]})
+df2 = pd.DataFrame({"col1": [5, 6], "col2": [7, 8]})
 
 
 def test_transformation():
